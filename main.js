@@ -111,3 +111,25 @@ let upperCaseName = inventors.map(upperCase);
 console.log(upperCaseName)
 
 //Print out initials of all inventors(e.g. A.E., I.N., ...)
+function firstInit(name) {
+  return name.charAt(0) + name[name.indexOf(' ') + 1]
+}
+filterThirdArray = inventors.map(firstInit);
+console.log(filterThirdArray);
+
+//Print out an array of every number multiplied by 100.
+const numbers = [1, 2, 3, 5, 8, 13, 21, 34, 55];
+
+function multiplied(num) {
+       return num * 100
+     }
+let getMultiplied = numbers.map (multiplied)
+console.log(getMultiplied)
+
+//Print out an array of the powers of two as shown by this array (e.g. 2, 4, 8, 16 ....).
+let newArray = [];
+
+for(let i =1; i<5 ;i ++){
+  newArray.push(Math.pow(2,i))
+}
+console.log(newArray)
